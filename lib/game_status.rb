@@ -19,6 +19,9 @@ def won?(board)
 end
 
 def full?(board)
-  foo = board.detect {|s| s == " "}
-  raise foo.inspect
+  if board.detect {|s| s == " "}
+    return false
+  else
+    return true
+  end
 end
