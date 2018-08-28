@@ -19,8 +19,6 @@ def won?(board)
 end
 
 def full?(board)
-  foo = board.detect |slot| do
-    slot == ""
-  end
+  foo = board.detect {|s| s == " "}
   raise foo.inspect
 end
