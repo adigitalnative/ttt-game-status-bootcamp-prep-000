@@ -19,5 +19,7 @@ def won?(board)
 end
 
 def full?(board)
-  board.detect {|slot| s == " "}
+  raise board.detect |slot| do
+    slot == " "
+  end
 end
