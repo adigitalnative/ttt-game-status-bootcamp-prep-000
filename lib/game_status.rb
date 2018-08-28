@@ -38,7 +38,7 @@ def over?(board)
   draw?(board) || won?(board)
 end
 
-def winner?(board)
+def winner(board)
   if winning_combination = won?(board)
     board[winning_combination[0]]
   end
